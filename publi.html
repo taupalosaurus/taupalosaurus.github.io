@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Nicolas Barral's homepage</title>
+<link href="defaultstyles.css" rel="stylesheet" media="screen" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51816797-1', 'inria.fr');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+<div id="container">
+<div id="wrapper">
+    
+    <div id="banner">
+      <div id="banner-title">
+    	  <h1>Nicolas Barral</h1>
+    	  <p><a href="http://www.imperial.ac.uk/earth-science/research/computational/"><b>Imperial College London</b></a></p>
+      </div>
+      <div id="banner-logo">
+        <a href="http://www.inria.fr">
+        <img src="inr_logo_cherch_UK_coul.png" width="175" title="INRIA logo" id="logo"/>
+        </a>
+      </div>
+    </div>
+    <div id="nav">
+    	<ul>
+      	<li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="publi.html">Publications</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+        </ul>
+    </div>
+    
+    <div id="page">
+		
+        <div id="content">
+        
+        <!--<div id="contentbar" class="contentbar1">
+        		<h3>Résumé</h3>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus   viverra, eros sed ullamcorper adipiscing, dolor ante aliquam justo, sed   mollis turpis augue ut nisl. Nunc id orci metus, a rhoncus massa. In hac   habitasse platea dictumst. Fusce sit amet arcu a dui mattis ultricies.</p>
+        	</div>-->
+
+        	
+        	<script>
+          function visibilite(thingId)
+          {
+          var targetElement;
+          targetElement = document.getElementById(thingId) ;
+          if (targetElement.style.display == "none")
+          {
+          targetElement.style.display = "" ;
+          } else {
+          targetElement.style.display = "none" ;
+          }
+          }
+          </script>
+
+
+
+          <!-- <p style="padding-top: 0pt; " ><br /></p> -->
+
+          <!--p>List of publications in <a title="http://www-rocq.inria.fr/who/Adrien.Loseille/publication/loseille_publications.pdf" href="http://www-rocq.inria.fr/who/Adrien.Loseille/publication/loseille_publications.pdf">[pdf]</a><br></p-->
+          <p> Click on [<a title="" href="">Preprint</a>]  to download the pdf, and  [<a title="" href="">Pdf</a>]  to reach the journal page <br />
+              Click on <a title="" href="">Abstract&gt;</a>  to display the abstract</p><p></p>
+
+
+          <h3>Papers</h3>
+          
+          <p>[1] <b>N. Barral</b> and F. Alauzet,
+             <em>Three-dimensional large displacement FSI simulations using a connectivity-change moving mesh approach</em>, 
+             Journal of Computational Physics, submitted.
+          </p>
+
+          <p>[2] P.L. George, H. Borouchaki and <b>N. Barral</b>,
+             <em>Construction and geometric validity (positive Jacobian) of serendipity Lagrange finite elements, theory and practical guidance</em>, 
+             Computer Methods in Applied Mechanics and Engineering, submitted.
+          </p>
+          
+          <p>[3] P.L. George, H. Borouchaki and <b>N. Barral</b>,
+             <em>Geometric validity (positive jacobian) of high-order Lagrange finite elements, theory and practical guidance</em>, 
+             Engineering with computers, accepted.
+          </p> 
+
+
+          <h3>Proceedings with peer-review</h3>
+          
+          <p>[1] <b>N. Barral</b>,F. Alauzet and A. Loseille, 
+            <em>Metric-Based Anisotropic Mesh Adaptation for Three-Dimensional Time-Dependent Problems Involving Moving Geometries</em>, 
+            AIAA SciTech 2015, Kissimee, FL, USA, January 2015.
+            [<a href="papers/BarralAlauzetLoseille_4.pdf">preprint</a>]
+            <a href="javascript:visibilite('div-aiaa2');"> Abstract&gt; </a>
+          </p>
+          <div id="div-aiaa2" style="display:none;">
+               Anisotropic metric based mesh adaptation has proved its efficiency to reduce the CPU time of 
+               steady simulations while improving their accuracy. However its extension to time-dependent 
+               problems is far from straightforward, and the introduction of moving meshes adds new problems. 
+               This paper presents updates regarding mesh adaptation for unsteady problems with moving boundaries. 
+               A new space-time analysis of the interpolation error in the continuous mesh framework is proposed, 
+               which enables enhancements of the fixed- point unsteady mesh adaptation algorithm. The analysis is 
+               then extended to the case of moving geometries, within the range of body-fitted moving meshes and 
+               ALE simulations, and the appropriate modifications are made to the adaptation algorithm. Finally, 
+               three dimensional adaptative simulations with moving boundaries are exhibited to validate our 
+               approach.
+          </div>
+
+          <p>[2] <b>N. Barral</b>, E. Luke and F. Alauzet, 
+            <em>Two mesh deformation methods coupled with a changing-connectivity moving mesh method for CFD Applications</em>, 
+            23th International Meshing Roundtable, London, October 2014.
+            [<a href="http://www.imr.sandia.gov/papers/imr23/17_IMR23_Barral.pdf">full paper</a>]
+            <a href="javascript:visibilite('div-imr1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-imr1" style="display:none;">
+               Three-dimensional real-life simulations are generally unsteady and involve moving geometries. 
+               Industry is currently very far from performing such body-fitted simulations on a daily basis, 
+               mainly due to the robustness of the moving mesh algorithm and their extensive computational 
+               cost. A moving mesh algorithm coupled to local mesh optimizations has proved its efficiency 
+               in dealing with large deformation of the mesh without re-meshing. In this paper, the coupling 
+               of this algorithm with two mesh deformation techniques is studied: an elasticity PDE-based one 
+               and an explicit Inverse Distance Weighted interpolation one, and both techniques are compared. 
+               The efficiency of this method is demonstrated on challenging test cases, involving large body 
+               deformations, boundary layers and large displacements with shearing. Finally, the moving mesh 
+               algorithm is coupled to a CFD flow solver.         
+          </div>
+
+          <p>[3] <b>N. Barral</b> and F. Alauzet, 
+            <em>Large displacement body-fitted FSI simulations using a mesh-connectivity-change moving mesh strategy</em>, 
+            AIAA Aviation 2014, Atlanta, GA, USA, June 2014.
+            [<a href="papers/BarralAlauzet_movingFSI_AIAA2014.pdf">preprint</a>]
+            <a href="javascript:visibilite('div-aiaa1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-aiaa1" style="display:none;">
+               This paper deals with numerical simulations involving three-dimensional moving 
+               geometries with large displacements. Such simulations are much valued by industries, 
+               but remain very time-consuming. A robust moving mesh algorithm coupling an elasticity-like 
+               mesh deformation solution and mesh optimizations is proposed, that allows to avoid 
+               remeshing while performing large displacements. However, this is done at the cost of 
+               relaxing the fixed-topology constraint imposed by the classical 
+               Arbitrary-Lagrangian-Eulerian (ALE) framework. An ALE compressible flow solver is 
+               integrated to this process. This solver lies on the strict interpretation of the 
+               Discrete Geometrical Conservation Law to preserve the order of accuracy of the time 
+               integration. For fluid-structure interaction (FSI) simulations, the 
+               six degrees of freedom (6-DOF) approach for rigid bodies is considered. Finally, 
+               3D imposed-motion and FSI examples are given, to validate the proposed approach.
+          </div>
+
+          
+          <h3>Conferences</h3>
+          
+          <p>[1] <b>N. Barral</b> and F. Alauzet, 
+            <em>Large displacement simulations with an efficient mesh-connectivity-change moving mesh strategy</em>, 
+            ECCOMAS 2014, Barcelona, Spain, July 2014.
+          </p>
+          
+          <p>[2] <b>N. Barral</b> and F. Alauzet, 
+            <em>Parallel time-accurate anisotropic mesh adaptation for time-dependent problems</em>, 
+            ECCOMAS 2014, Barcelona, Spain, July 2014.
+          </p>
+          
+
+          <h3>Research reports</h3>
+
+          <p>[1] P.L George, H. Borouchaki and <b>N. Barral</b>, <em>Construction et validation des éléments Serendip associés à un carreau de degré arbitraire</em>, INRIA RR-8572, 2014.  
+             [<a title="http://hal.inria.fr/hal-01052913" href="http://hal.inria.fr/hal-01052913">pdf</a>] 
+          <br></p>
+
+          <p>[2] P.L George, H. Borouchaki and <b>N. Barral</b>, <em>Construction et validation des éléments réduits associés à un carreau simplicial de degré arbitraire</em>, INRIA RR-8571, 2014.  
+             [<a title="http://hal.inria.fr/hal-01052929" href="http://hal.inria.fr/hal-01052929">pdf</a>] 
+          <br>
+          </p>
+          
+          
+          <h3>Talks and seminars</h3>
+          
+          <p>[1] <em>Adaptation de maillages non structurés pour des problèmes instationnaires, et maillage en géométrie mobile</em>,
+            Groupe de travail "Analyse Numérique et EDP", Ecole Centrale Paris, November 2014
+          </p>
+          
+            
+          <h3>Vulgarisation</h3>
+
+          <p>[1] <em>Du réel au numérique : la science des maillages</em>,
+             Pint of Science, Paris, May 2015
+          </p>
+          
+
+          <h3>Masters Thesis</h3>
+
+          <p>[1] <em>Adaptation de maillages en régime instationnaire (Mesh adaptation for unsteady flows)</em>, Ecole Centrale Paris. 
+             [<a href="papers/memoireMaster.pdf">pdf</a>]
+          <a href="javascript:visibilite('div-mt');"> Abstract&gt; </a>
+          </p>
+          <div id="div-mt" style="display:none;">
+               Numerical simulation is currently broadly used in the world of engineering. Computation power and time 
+               remain one of the main problematics, that limitate the scope of the simulations. Mesh adaptation aims 
+               at answering this problem, thanks to a hudge increase of the precision of a com- putation, for a fixed 
+               number of mesh vertices. Mesh adaptation for steady problems has become mature, however mesh adapation 
+               for unsteady flows remains a challenge, from a theoretical point of view as well as practical. The 
+               objective of this internship was the analysis of several variants of the unsteady mesh adaptation 
+               algorithm designed in the Gamma team, at INRIA. This algorithm is based on the splitting of a simulation 
+               interval into several sub-intervals, on which the solution does not evolve "too much", so that the same 
+               adapted mesh can be considered on each sub-interval. The metric field, on which the generation of the 
+               adapted meshes is based, is computed as an average of the instant metric fields along the sub-interval. 
+               We have studied the several state-of-the art variants of the algorithm, re-doing the calculations that 
+               lead to them. Then we have numerically compared two of these versions, in which the average metric fields 
+               are computed differently, running a lot of simulations a several reprensentative test cases. We have 
+               concluded that the l1 provides better results.
+               In parallel to this work, we have carried out a pre-study on the moving mesh of an engine, for the INP 
+               Énergies Nouvelles. We have prepared a mesh IFP had transmitted to us, and validated the movement of its 
+               surface.
+               We also have carried on the implementatio on GPU of our home CFD solver. We have improved our previous 
+               implementation, and multiplied our acceleration factor by 5.
+          </div>
+          <br>
+          
+        	
+        	
+        	
+        	
+        	
+
+
+        </div>
+	</div>
+    </div>
+    <div id="footer">
+    	Nicolas Barral &copy; INRIA
+    </div>
+    
+</div>
+</div>
+</body>
+</html>
