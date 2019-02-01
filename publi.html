@@ -69,16 +69,28 @@
 
           <p>[1] <b>N. Barral</b> and F. Alauzet,
              <em>Three-dimensional CFD simulations with large displacement of the geometries using a connectivity-change moving mesh approach}</em>, Engineering with Computers, 2018.
+          <a href="javascript:visibilite('div-ewc2');"> Abstract&gt; </a>
           </p>
+          <div id="div-ewc2" style="display:none;">
+              This paper deals with three-dimensional (3D) numerical simulations involving 3D moving geometries with large displacements on unstructured meshes. Such simulations are of great value to industry, but remain very time-consuming. A robust moving mesh algorithm coupling an elasticity-like mesh deformation solution and mesh optimizations was proposed in previous works, which removes the need for global remeshing when performing large displacements. The optimizations, and in particular generalized edge/face swapping, preserve the initial quality of the mesh throughout the simulation. We propose to integrate an Arbitrary Lagrangian Eulerian compressible flow solver into this process to demonstrate its capabilities in a full CFD computation context. This solver relies on a local enforcement of the discrete geometric conservation law to preserve the order of accuracy of the time integration. The displacement of the geometries is either imposed, or driven by fluid–structure interaction (FSI). In the latter case, the six degrees of freedom approach for rigid bodies is considered. Finally, several 3D imposed-motion and FSI examples are given to validate the proposed approach, both in academic and industrial configurations.              
+          </div>
   
           <p>[2] <b>N. Barral</b>, G. Olivier and F. Alauzet,  
               <em>Time-accurate anisotropic mesh adaptation for three-dimensional time-dependent problems with body-fitted moving geometries</em>, Journal of Computational Physics, 2017.
+              <a href="javascript:visibilite('div-jcp');"> Abstract&gt; </a>
           </p>
+          <div id="div-jcp" style="display:none;">
+              Anisotropic metric-based mesh adaptation has proved its efficiency to reduce the CPU time of steady and unsteady simulations while improving their accuracy. However, its extension to time-dependent problems with body-fitted moving geometries is far from straightforward. This paper establishes a well-founded framework for multiscale mesh adaptation of unsteady problems with moving boundaries. This framework is based on a novel space–time analysis of the interpolation error, within the continuous mesh theory. An optimal metric field, called ALE metric field, is derived, which takes into account the movement of the mesh during the adaptation. Based on this analysis, the global fixed-point adaptation algorithm for time-dependent simulations is extended to moving boundary problems, within the range of body-fitted moving meshes and ALE simulations. Finally, three dimensional adaptive simulations with moving boundaries are presented to validate the proposed approach.              
+          </div>
                     
           <p>[3] P.L. George, H. Borouchaki and <b>N. Barral</b>,
              <em>Geometric validity (positive jacobian) of high-order Lagrange finite elements, theory and practical guidance</em>
              Engineering with computers, 2016.
-          </p> 
+             <a href="javascript:visibilite('div-ewc1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-ewc1" style="display:none;">
+              Finite elements of degree two or more are needed to solve various P.D.E. problems. This paper discusses a method to validate such meshes for the case of the usual Lagrange elements of various degrees. The first section of this paper comes back to Bézier curve and Bézier patches of arbitrary degree. The way in which a Bézier patch and a finite element are related is recalled. The usual Lagrange finite elements of various degrees are discussed, including simplices (triangle and tetrahedron), quads, prisms (pentahedron), pyramids and hexes together with some low-degree Serendipity elements. A validity condition, the positivity of the jacobian, is exhibited for these elements. Elements of various degrees are envisaged also including some “linear” elements (therefore straight-sided elements of degree 1) because the jacobian (polynomial) of some of them is not totally trivial.               
+          </div> 
 
 
           <h3>Preprints</h3>
@@ -99,12 +111,20 @@
           <p>[1] M. Park, A. Balan, W. Anderson, M. Galbraith, P. Caplan, H. Carson, T. Michal, J. Krakos, D. Kamenetskiy, A. Loseille, F. Alauzet, L. Frazza, and <b>N. Barral</b>,
              <em>Verification of Unstructured Grid Adaptation Components</em>
              AIAA Scitech 2019 Forum, AIAA Paper 2019-1723, San Diego, CA, USA, Jan 2019. 
+             <a href="javascript:visibilite('div-aiaa4');"> Abstract&gt; </a>
           </p>
+          <div id="div-aiaa4" style="display:none;">
+              Adaptive unstructured grid techniques have made limited impact on production analysis workflows where the control of discretization error is critical to obtaining reliable simulation results. Recent progress has matured a number of independent implementations of flow solvers, error estimation methods, and anisotropic grid adaptation mechanics. Known differences and previously unknown differences in grid adaptation components and their integrated processes are identified here for study. Unstructured grid adaptation tools are verified using analytic functions and the Code Comparison Principle. Three analytic functions with different smoothness properties are adapted to show the impact of smoothness on implementation differences. A scalar advection-diffusion problem with an analytic solution that models a boundary layer is adapted to test individual grid adaptation components. Laminar flow over a delta wing and turbulent flow over an ONERA M6 wing are verified with multiple, independent grid adaptation procedures to show consistent convergence to fine-grid forces and a moment. The scalar problems illustrate known differences in a grid adaptation component implementation and a previously unknown interaction between components. The wing adaptation cases in the current study document a clear improvement to existing grid adaptation procedures. The stage is set for the infusion of verified grid adaptation into production fluid flow simulations.
+          </div>
 
           <p>[2] M. Park, <b>N. Barral</b>, D. Ibanez, D. Kamenetskiy, J. Krakos, T. Michal and A. Loseille, 
              <em>Unstructured Grid Adaptation and Solver Technology for Turbulent Flows</em>, 
              56th AIAA Aerospace Sciences Meeting, AIAA Paper 2018-1103, Kissimmee, FL, USA, Jan 2018.
+             <a href="javascript:visibilite('div-aiaa3');"> Abstract&gt; </a>
           </p>
+          <div id="div-aiaa3" style="display:none;">
+              Unstructured grid adaptation is a tool to control Computational Fluid Dynamics (CFD) discretization error.  However, adaptive grid techniques have made limited impact on production analysis workflows where the control of discretization error is critical to obtaining reliable simulation results.  Issues that prevent the use of adaptive grid methods are identified by applying unstructured grid adaptation methods to a series of benchmark cases. Once identified, these challenges to existing adaptive workflows can be addressed.  Unstructured grid adaptation is evaluated for test cases described on the Turbulence Modeling Resource (TMR) website, which documents uniform grid refinement of multiple schemes.  The cases are turbulent flow over a Hemisphere Cylinder and an ONERA M6 Wing. Adaptive grid force and moment trajectories are shown for three integrated grid adaptation processes with Mach interpolation control and output error based metrics.  The integrated grid adaptation process with a finite element (FE) discretization produced results consistent with uniform grid refinement of fixed grids. The integrated grid adaptation processes with finite volume schemes were slower to converge to the reference solution than the FE method. Metric conformity is documented on grid/metric snapshots for five grid adaptation mechanics implementations.  These tools produce anisotropic boundary conforming grids requested by the adaptation process.
+          </div>
 
           <p>[3] D. Ibanez, <b>N. Barral</b>, J. Krakos, A. Loseille, T. Michal and M. Park,
              <em>First Benchmark of the Unstructured Grid Adaptation Working Group</em>, 
@@ -317,7 +337,6 @@
                We also have carried on the implementatio on GPU of our home CFD solver. We have improved our previous 
                implementation, and multiplied our acceleration factor by 5.
           </div>
-          <br>
           
         	
         	<h3>Awards</h3>
@@ -325,7 +344,8 @@
           <p>[1] <b>IMR Meshing Contest Award</b>, 
              23th International Meshing Roundtable, London, October 2014.
           </p>
-        	
+        	<br>
+
         	
         	
 
