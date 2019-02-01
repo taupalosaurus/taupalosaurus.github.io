@@ -35,13 +35,7 @@
     <div id="page">
 		
         <div id="content">
-        
-        <!--<div id="contentbar" class="contentbar1">
-        		<h3>Résumé</h3>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus   viverra, eros sed ullamcorper adipiscing, dolor ante aliquam justo, sed   mollis turpis augue ut nisl. Nunc id orci metus, a rhoncus massa. In hac   habitasse platea dictumst. Fusce sit amet arcu a dui mattis ultricies.</p>
-        	</div>-->
 
-        	
         	<script>
           function visibilite(thingId)
           {
@@ -57,19 +51,16 @@
           </script>
 
 
-
-          <!-- <p style="padding-top: 0pt; " ><br /></p> -->
-
-          <!--p>List of publications in <a title="http://www-rocq.inria.fr/who/Adrien.Loseille/publication/loseille_publications.pdf" href="http://www-rocq.inria.fr/who/Adrien.Loseille/publication/loseille_publications.pdf">[pdf]</a><br></p-->
-          <p> Click on [<a title="" href="">Preprint</a>]  to download the pdf, and  [<a title="" href="">Pdf</a>]  to reach the journal page <br />
+          <p> Click on [<a title="" href="">PDF</a>]  to download the pdf. If the link is missing or broken, feel free to <a href="mailto:n_dot_barral_at_imperial_dot_ac_dot_uk">contact</a> me.<br />
               Click on <a title="" href="">Abstract&gt;</a>  to display the abstract</p><p></p>
 
 
           <h3>Papers</h3>
 
           <p>[1] <b>N. Barral</b> and F. Alauzet,
-             <em>Three-dimensional CFD simulations with large displacement of the geometries using a connectivity-change moving mesh approach}</em>, Engineering with Computers, 2018.
-          <a href="javascript:visibilite('div-ewc2');"> Abstract&gt; </a>
+             <em>Three-dimensional CFD simulations with large displacement of the geometries using a connectivity-change moving mesh approach</em>, Engineering with Computers, 2018.
+             [<a title="https://link.springer.com/content/pdf/10.1007%2Fs00366-018-0607-5.pdf" href="https://link.springer.com/content/pdf/10.1007%2Fs00366-018-0607-5.pdf">PDF</a>]
+             <a href="javascript:visibilite('div-ewc2');"> Abstract&gt; </a>
           </p>
           <div id="div-ewc2" style="display:none;">
               This paper deals with three-dimensional (3D) numerical simulations involving 3D moving geometries with large displacements on unstructured meshes. Such simulations are of great value to industry, but remain very time-consuming. A robust moving mesh algorithm coupling an elasticity-like mesh deformation solution and mesh optimizations was proposed in previous works, which removes the need for global remeshing when performing large displacements. The optimizations, and in particular generalized edge/face swapping, preserve the initial quality of the mesh throughout the simulation. We propose to integrate an Arbitrary Lagrangian Eulerian compressible flow solver into this process to demonstrate its capabilities in a full CFD computation context. This solver relies on a local enforcement of the discrete geometric conservation law to preserve the order of accuracy of the time integration. The displacement of the geometries is either imposed, or driven by fluid–structure interaction (FSI). In the latter case, the six degrees of freedom approach for rigid bodies is considered. Finally, several 3D imposed-motion and FSI examples are given to validate the proposed approach, both in academic and industrial configurations.              
@@ -77,6 +68,7 @@
   
           <p>[2] <b>N. Barral</b>, G. Olivier and F. Alauzet,  
               <em>Time-accurate anisotropic mesh adaptation for three-dimensional time-dependent problems with body-fitted moving geometries</em>, Journal of Computational Physics, 2017.
+              [<a title="https://hal.inria.fr/hal-01426156/document" href="https://hal.inria.fr/hal-01426156/document">PDF</a>]
               <a href="javascript:visibilite('div-jcp');"> Abstract&gt; </a>
           </p>
           <div id="div-jcp" style="display:none;">
@@ -86,6 +78,7 @@
           <p>[3] P.L. George, H. Borouchaki and <b>N. Barral</b>,
              <em>Geometric validity (positive jacobian) of high-order Lagrange finite elements, theory and practical guidance</em>
              Engineering with computers, 2016.
+             [<a title="http://taupalosaurus.notk.org/papers/George2016_Article_GeometricValidityPositiveJacob.pdf" href="http://taupalosaurus.notk.org/papers/George2016_Article_GeometricValidityPositiveJacob.pdf">PDF</a>]
              <a href="javascript:visibilite('div-ewc1');"> Abstract&gt; </a>
           </p>
           <div id="div-ewc1" style="display:none;">
@@ -98,7 +91,12 @@
           <p>[1] <b>N. Barral</b>, M.G. Knepley, M. Lange, M.D. Piggott and G.J. Gorman,
              <em>Anisotropic mesh adaptation in Firedrake with PETSc DMPlex</em>, 
              25th International Meshing Roundtable, Washington DC, USA, September 2016.
+             [<a title="https://imr.sandia.gov/papers/imr25/2026_imr25RN_Barral.pdf" href="https://imr.sandia.gov/papers/imr25/2026_imr25RN_Barral.pdf">PDF</a>]
+             <a href="javascript:visibilite('div-imrrn1');"> Abstract&gt; </a>
           </p>
+          <div id="div-imrrn1" style="display:none;">
+              Despite decades of research in this area, mesh adaptation capabilities are still rarely found in numerical simulation software. Wepostulate that the primary reason for this is lack of usability. Integrating mesh adaptation into existing software is difficult as non-trivial operators, such as error metrics and interpolation operators, are required, and integrating available adaptive remeshers is notstraightforward. Our approach presented here is to first integrate Pragmatic, an anisotropic mesh adaptation library, into DMPlex, aPETSc object that manages unstructured meshes and their interactions with PETSc’s solvers and I/O routines. As PETSc is alreadywidely used, this will make anisotropic mesh adaptation available to a much larger community.  As a demonstration of this wedescribe the integration of anisotropic mesh adaptation into Firedrake, an automated Finite Element based system for the portablesolution of partial differential equations which already uses PETSc solvers and I/O via DMPlex. We present a proof of concept ofthis integration with a three-dimensional advection test case.              
+          </div> 
 
           <p>[2] P.L. George, H. Borouchaki and <b>N. Barral</b>,
              <em>Construction and geometric validity (positive Jacobian) of serendipity Lagrange finite elements, theory and practical guidance</em>, 
@@ -109,8 +107,9 @@
           <h3>Proceedings with peer-review</h3>
 
           <p>[1] M. Park, A. Balan, W. Anderson, M. Galbraith, P. Caplan, H. Carson, T. Michal, J. Krakos, D. Kamenetskiy, A. Loseille, F. Alauzet, L. Frazza, and <b>N. Barral</b>,
-             <em>Verification of Unstructured Grid Adaptation Components</em>
-             AIAA Scitech 2019 Forum, AIAA Paper 2019-1723, San Diego, CA, USA, Jan 2019. 
+             <em>Verification of Unstructured Grid Adaptation Components</em>,
+             AIAA Scitech 2019 Forum, AIAA Paper 2019-1723, San Diego, CA, USA, Jan 2019.
+             [<a title="http://taupalosaurus.notk.org/papers/6.2019-1723.pdf" href="http://taupalosaurus.notk.org/papers/6.2019-1723.pdf">PDF</a>] 
              <a href="javascript:visibilite('div-aiaa4');"> Abstract&gt; </a>
           </p>
           <div id="div-aiaa4" style="display:none;">
@@ -120,6 +119,7 @@
           <p>[2] M. Park, <b>N. Barral</b>, D. Ibanez, D. Kamenetskiy, J. Krakos, T. Michal and A. Loseille, 
              <em>Unstructured Grid Adaptation and Solver Technology for Turbulent Flows</em>, 
              56th AIAA Aerospace Sciences Meeting, AIAA Paper 2018-1103, Kissimmee, FL, USA, Jan 2018.
+             [<a title="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180006169.pdf" href="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20180006169.pdf">PDF</a>]
              <a href="javascript:visibilite('div-aiaa3');"> Abstract&gt; </a>
           </p>
           <div id="div-aiaa3" style="display:none;">
@@ -129,12 +129,17 @@
           <p>[3] D. Ibanez, <b>N. Barral</b>, J. Krakos, A. Loseille, T. Michal and M. Park,
              <em>First Benchmark of the Unstructured Grid Adaptation Working Group</em>, 
              Proc. of the 26th International Meshing Roundtable, Procedia Engineering, vol 203, pp. 154-166, Washington DC, USA, 2017.
+             [<a title="https://doi.org/10.1016/j.proeng.2017.09.800" href="https://doi.org/10.1016/j.proeng.2017.09.800">PDF</a>]
+             <a href="javascript:visibilite('div-imr2');"> Abstract&gt; </a>
           </p>
+          <div id="div-imr2" style="display:none;">
+              Unstructured grid adaptation is a technology that holds the potential to improve the automation and accuracy of computational fluid dynamics and other computational disciplines. Difficulty producing the highly anisotropic elements necessary for simulation on complex curved geometries that satisfies a resolution request has limited this technology’s widespread adoption. The Unstructured Grid Adaptation Working Group is an open gathering of researchers working on adapting simplicial meshes to conform to a metric field. Current members span a wide range of institutions including academia, industry, and national laboratories. The purpose of this group is to create a common basis for understanding and improving mesh adaptation. We present our first major contribution: a common set of benchmark cases, including input meshes and analytic metric specifications, that are publicly available to be used for evaluating any mesh adaptation code. We also present the results of several existing codes on these benchmark cases, to illustrate their utility in identifying key challenges common to all codes and important differences between available codes. Future directions are defined to expand this benchmark to mature the technology necessary to impact practical simulation workflows.
+          </div>
 
           <p>[4] <b>N. Barral</b>,F. Alauzet and A. Loseille, 
              <em>Metric-Based Anisotropic Mesh Adaptation for Three-Dimensional Time-Dependent Problems Involving Moving Geometries</em>, 
              AIAA SciTech 2015, Kissimee, FL, USA, January 2015.
-             [<a href="papers/BarralAlauzetLoseille_4.pdf">preprint</a>]
+             <!--[<a href="papers/BarralAlauzetLoseille_4.pdf">preprint</a>]-->
              <a href="javascript:visibilite('div-aiaa2');"> Abstract&gt; </a>
           </p>
           <div id="div-aiaa2" style="display:none;">
@@ -153,7 +158,7 @@
           <p>[5] <b>N. Barral</b>, E. Luke and F. Alauzet, 
              <em>Two mesh deformation methods coupled with a changing-connectivity moving mesh method for CFD Applications</em>, 
              23th International Meshing Roundtable, London, October 2014.
-             [<a href="http://www.imr.sandia.gov/papers/imr23/17_IMR23_Barral.pdf">full paper</a>]
+             [<a title="http://www.imr.sandia.gov/papers/imr23/17_IMR23_Barral.pdf" href="http://www.imr.sandia.gov/papers/imr23/17_IMR23_Barral.pdf">PDF</a>]
              <a href="javascript:visibilite('div-imr1');"> Abstract&gt; </a>
           </p>
           <div id="div-imr1" style="display:none;">
@@ -172,7 +177,7 @@
           <p>[6] <b>N. Barral</b> and F. Alauzet, 
              <em>Large displacement body-fitted FSI simulations using a mesh-connectivity-change moving mesh strategy</em>, 
              AIAA Aviation 2014, Atlanta, GA, USA, June 2014.
-             [<a href="papers/BarralAlauzet_movingFSI_AIAA2014.pdf">preprint</a>]
+             <!--[<a href="papers/BarralAlauzet_movingFSI_AIAA2014.pdf">preprint</a>]-->
              <a href="javascript:visibilite('div-aiaa1');"> Abstract&gt; </a>
           </p>
           <div id="div-aiaa1" style="display:none;">
@@ -254,19 +259,21 @@
           </p>
 
 
+
           <h3>Research reports</h3>
 
           <p>[1] T. McManus, J. Percival, B. Yeager, <b>N. Barral</b> G. Gorman and M. Piggott
              <em>Moving mesh methods in Fluidity and Firedrake</em>, 
-             2017.
+             Archer report eCSE06-1, 2017.
+             [<a title="https://spiral.imperial.ac.uk/bitstream/10044/1/57583/2/IC15-ecse-tech-report.pdf" href="https://spiral.imperial.ac.uk/bitstream/10044/1/57583/2/IC15-ecse-tech-report.pdf"></a>]
           </p>
 
           <p>[2] P.L George, H. Borouchaki and <b>N. Barral</b>, <em>Construction et validation des éléments Serendip associés à un carreau de degré arbitraire</em>, INRIA RR-8572, 2014.  
-             [<a title="http://hal.inria.fr/hal-01052913" href="http://hal.inria.fr/hal-01052913">pdf</a>] 
+             [<a title="http://hal.inria.fr/hal-01052913/document" href="http://hal.inria.fr/hal-01052913/document">PDF</a>] 
           <br></p>
 
           <p>[3] P.L George, H. Borouchaki and <b>N. Barral</b>, <em>Construction et validation des éléments réduits associés à un carreau simplicial de degré arbitraire</em>, INRIA RR-8571, 2014.  
-             [<a title="http://hal.inria.fr/hal-01052929" href="http://hal.inria.fr/hal-01052929">pdf</a>] 
+             [<a title="http://hal.inria.fr/hal-01052929/document" href="http://hal.inria.fr/hal-01052929/document">PDF</a>] 
           <br>
           </p>
           
@@ -303,7 +310,7 @@
           <p>[1] N. Barral,
              <em>Time-accurate anisotropic mesh adaptation for three-dimensional moving mesh problems</em>,
              PhD Thesis, Université Pierre et Marie Curie, 2015.
-             [<a title="https://hal.inria.fr/tel-01284113v2" href="https://hal.inria.fr/tel-01284113v2">pdf</a>] 
+             [<a title="https://hal.inria.fr/tel-01284113v2/document" href="https://hal.inria.fr/tel-01284113v2/document">pdf</a>] 
              <a href="javascript:visibilite('div-phdt');"> Abstract&gt; </a>
           </p>
           <div id="div-phdt" style="display:none;">
