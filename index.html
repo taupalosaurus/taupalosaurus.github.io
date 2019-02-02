@@ -38,18 +38,20 @@
 		
         <div id="content">
         
-        <div id="sidebar">
+          <div id="sidebar">
         		<img src="portrait.jpg" width="175" title="picture of me" id="fac_photo"/>
         		<h3>Contact</h3>
-        		<p>Department of Earth Science and Engineering<br />
-               Imperial College London <br />
-        		   Royal School of Mines - Office 4.88 <br />
-  				     South Kensington Campus <br />
-  				     London SW7 2AZ <br />
-  				     Phone +44 (0)20 7594 9984 <br />
-  				<a href="mailto:n_dot_barral_at_imperial_dot_ac_dot_uk">Email</a><br />
-  				<a href="http://www.imperial.ac.uk/people/n.barral">Imperial College webpage</a></p>
-        	</div>
+        		<p>
+              Department of Earth Science and Engineering<br />
+              Imperial College London <br />
+        		  Royal School of Mines - Office 4.88 <br />
+  				    South Kensington Campus <br />
+  				    London SW7 2AZ <br />
+  				    Phone +44 (0)20 7594 9984 <br />
+  				    <a href="mailto:n_dot_barral_at_imperial_dot_ac_dot_uk">Email</a><br />
+  				    <a href="http://www.imperial.ac.uk/people/n.barral">Imperial College webpage</a>
+            </p>
+          </div>
         
         	<p>Welcome to my website. 
         	</p>
@@ -60,14 +62,15 @@
           <p>My research focuses on mesh adaptation strategies for transient simulations and coastal ocean modelling.
           I have a broader interests for Computational Fluids Dynamic, meshing techniques and High Performance Computing. </p>
 
-          I am currently involved in several open-source software projects:
+          <a name="software"></a>
+          <p>I am currently involved in several open-source software projects:
           <ul>
             <li> Pragmatic, an anisotropic adaptive remesher <a href="https://github.com/meshadaptation/pragmatic">available on github</a>, </li>
             <li> PETSc/DMPlex, the unstructured mesh handler of <a href="https://www.mcs.anl.gov/petsc/">PETSc</a>, <a href="https://bitbucket.org/petsc/petsc">available on bitbucket</a>,</li>
             <li> <a href="https://thetisproject.org/">Thetis</a>, a coastal ocean model <a href="https://github.com/thetisproject/thetis">available on github</a>.</li>
-          </ul>
+          </ul></p>
 
-          See my <a href="gallery.html">gallery</a>  for examples of recent and less recent works.
+          <p>See my <a href="gallery.html">gallery</a>  for examples of recent and less recent works.</p>
 
           <h3>Mesh adaptation</h3>
 
@@ -85,7 +88,7 @@
 
           <h4>Goal Oriented error models</h4>
 
-          When a clear goal is identified (drag on an airfoil, inundation of a certain geographic area, power of tiadal turbine arrays, etc.) on can derive an adjoint problem with respect to this goal. The solution of this problem contains sensitivity information of the initial problem, and can be used to build goal-oriented error models. The challenge of the method lies in the computation of the adjoint, which often require automatic differentiation of the initial problem.
+          <p>When a clear goal is identified (drag on an airfoil, inundation of a certain geographic area, power of tiadal turbine arrays, etc.) on can derive an adjoint problem with respect to this goal. The solution of this problem contains sensitivity information of the initial problem, and can be used to build goal-oriented error models. The challenge of the method lies in the computation of the adjoint, which often require automatic differentiation of the initial problem.</p>
 
           <h4>Algorithms</h4>
 
@@ -101,13 +104,23 @@
 
           <h4>Moving meshes</h4>
 
-          
+          <p>Moving meshes (a.k.a. r-adaptation) is another kind of mesh adaptation strategy, where the position of the vertices evolves continiously in time and the mesh topology is kept constant. I have worked on moving meshes following the displacement of moving geometries, as well as moving meshes following a solution field. Ultimately, these strategies would be coupled to anisotropic adaptation to reduce the number of remeshings.</p>
 
 
           <h3>Coastal ocean modelling</h3>
 
+          <p>I have been applying mesh adaptation techniques to coastal engineering problems with the coastal model Thetis. I am interested in tidal turbine modelling (either tidal stream or tidal range turbines). A substantial part of the British energy mix could come from tidal renewable energy. For obvious reasons, life size experimentation is difficult, which makes numerical experimentation essential to make good use of the technology. Optimisation of the structures to produce maximal power is challenge, but the economic sustainability also needs to be assessed, as well as the environmental impact. In particular, turbines modify local sedimentology, notably due to seabed scour effects. Due to the high vorticity near the turbines, the water quality can be impacted. At a larger scale, large tidal structures can modify tidal patterns. These are examples of problems that I intend to study, both on idealized geometries for a better understanding of the physics involved and on realistic test cases. These simulations can benefit from mesh adaptation, both when a specific goal is considered, and when large multiscale simulations are run.</p>
+
+          <p>Tsunami propagation can also benefit from mesh adaptation: the adaptive meshes can track the wavefronts at a reduced cost, and goal-based strategies reduce considerably the CPU cost when only a small geographic area is of interest.</p>
+
+
 
           <h3>Software development and HPC</h3>
+
+          <p>Through my work with mesh adaptivity, I am involved in the development of several codes, notably Pragmatic, PETSc/DMPlex and Thetis (see <a href="#software">above</a>). I am interested in modern software engineering methods, including modern languages, code generation and distributed version control.</p>
+
+          <p>I am also interested in parallel programming, and making the most of our modern computing infrastructures.</p>
+
 
           <br><br><br><br><br><br><br><br><br>
           Disclaimer: some pages of these web pages require <em>javascript</em> to display all the content.
