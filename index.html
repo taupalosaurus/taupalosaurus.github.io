@@ -69,6 +69,34 @@
 
           See my <a href="gallery.html">gallery</a>  for examples of recent and less recent works.
 
+          <h3>Mesh adaptation</h3>
+
+          <p> Anisotropic mesh adaptation has demonstrated over the past 30 years its efficiency to improve the accuracy of numerical simulations while reducing their CPU cost. It consists in optimising the position and the orientation of the elements of an instructured mesh in order to minimise a certain quantity. My research on mesh adaptation spans from a mathematical and physical analysis of the equations at stake, to define appropriately this quantity to minimize, to the practical implentation of the resulting algoritms and development of appropriate software.
+          </p>
+
+          <h4>Error models</h4>
+          To make the most of mesh adaptation, one needs to have an appropriate representation of the variations of the solution and of the numerical error, in order to impose just the right sizes and orientations to the mesh elements.
+
+          In my work, I consider the interpolation error, which is a natural candidate to represent the quality of the representation of a solution field onto a mesh. This interpolation error can be approximated by the second derivatives of the solution, its <em>Hessian</em>, (practical experience shows that this approximation, rigourously established in some cases, remains valid in general). The continous mesh framework, developed at INRIA a decade ago, offers a correspondance between discrete meshes and continuous Riemanian metric fields that enables the derivation of error estimates for Hessian-based adaptivity. An optimal <em>multiscale metric</em> is found, that is fed to the meshing software to generate an optimal mesh.
+
+          During my PhD, I have notably studied error models for time-dependant simulations, and contributed to the derivation of an optimal multiscale metric based on the average of the Hessian over sub-intervals of the simulation. 
+
+          Related to the question of the error estimate formulation is the question of the quantity driving the adaptation: which (physical) quantities should I use in my error model ? This question is highly dependent on the problems considered, and there is, to my knowledge, no rigorously established answer to that question. In engineering applications, such as some considered below, picking the right sensor is crucial to improve the resolution of the phenomenom of interest. 
+
+          error + sensor + adjoint
+
+          <h4>Algorithms</h4>
+
+          <h4>Software</h4>
+
+          <h4>Moving meshes</h4>
+
+
+          <h3>Coastal ocean modelling</h3>
+
+
+          <h3>Software development and HPC</h3>
+
           <br><br><br><br><br><br><br><br><br>
           Disclaimer: some pages of these web pages require <em>javascript</em> to display all the content.
             
