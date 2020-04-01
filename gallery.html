@@ -98,6 +98,89 @@
           </table>
           Sinusoidal elevation is prescribed on the open boundary (half circle). Turbines can be placed in the channel.
 
+          <h4>Advected bubble in 2D and 3D</h4>
+          <table cellspacing="2" cellpadding="2" width="100%">
+            <tr>
+              <td align="center" width="50%">
+              <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/IJMk-Gz3-wM" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+              <td align="center" width="50%">
+              <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/n7pBWPYsxa4" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+            </tr>
+          </table>
+          This test case was used to validate our mesh adaptation implementation in Firedrake.
+          
+
+          <h3><underligned_h3>Moving-mesh adaptation</underligned_h3></h3>
+          
+          <h4>Two F117 aircrafts crossing flight paths</h4>
+          <table cellspacing="2" cellpadding="2" width="100%">
+            <tr>
+              <td align="center" width="50%">
+                <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/PltQYr0FVyk" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+              <td align="center" width="50%">
+                <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/NkgBZgZ7Kzw" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+            </tr>
+          </table>
+          Two F117 fighters rotating and passing each other at a subsonic speed. Density field 
+          (left) and moving anisotropic mesh (right).
+          <!--For comparison purpose, see the non adapted solution <a href="#doubleF117NonAdapted">here</a>-->
+          
+          <h4>Vortical wake of a F117 aicraft nosing up</h4>
+          <table cellspacing="2" cellpadding="2" width="100%">
+            <tr>
+              <td align="center" width="50%">
+                <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/i_jpT5_HW5M" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+              <td align="center" width="50%">
+                <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/mpmWZWmb_XU" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+            </tr>
+          </table>
+          A F117 aircraft noses up, and creates vorticity in its make. Mach isolines (left), 
+          and moving anisotropic adapted meshes (right).
+          
+          
+          <h4>3D ball in a shock tube</h4>
+          <table cellspacing="2" cellpadding="2" width="100%">
+            <tr>
+              <td align="center" width="50%">
+                <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/kgonWG_bmz4" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+              <td align="center" width="50%">
+                <iframe frameborder="0" width="456" height="256.5" src="https://www.youtube.com/embed/kLmQlLrQDRg" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </td>
+            </tr>
+          </table>
+          Rigid ball in translation in a shock tube, interacting with the shock 
+          and the contact discontinuity. Moving anistropic adapted mesh (left), 
+          and density field (right).
+          
+          
+
+          <h3><underligned_h3>Moving-mesh CFD simulations</underligned_h3></h3>
+          
+          <h4>Ejection of the door of an overpressured aircraft FSI simulation</h4>
+          <div class="centered-video">
+          <iframe frameborder="0" width="480" height="270" src="https://www.youtube.com/embed/i7bRTyIET6c" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>      
+          <br />
+          Example of Fluid-Structure Interaction simulation: the door of an overpressured 
+          aircraft is ejected from the cabin.<b></b><br />
+
+
+          <h3><underligned_h3>Unsteady mesh adaptation</underligned_h3></h3>
+          
+          <h4>Blast on London Tower Bridge</h4>
+          <div class="centered-video">
+          <iframe frameborder="0" width="480" height="270" src="https://www.youtube.com/embed/QP8vBHSTFww" loop=1 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>  
+          <br />
+          Time-accurate adaption of a blast on a complex geometry (average mesh size: 2M vertices).<br />
+
         </div>
 	  </div>
     </div>
