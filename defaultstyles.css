@@ -65,12 +65,13 @@ h1 {
 }
 #banner-title {
   display:inline-block;
-  width:560px;
+  vertical-align:top;
+  width:720px;
 }
 #banner-logo {
   display:inline-block;
   align:right;
-  width:355px;
+  width:200px;
 }
 #nav {
 	background-color:#EEE;
