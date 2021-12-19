@@ -74,7 +74,35 @@
 
           <h3>Papers</h3>
 
-          <p>[1] <b>N. Barral</b> and F. Alauzet,
+          <p>[1] J. Wallwork, <b>N. Barral</b>, D. Ham and M. Piggott,
+            <em>Goal-Oriented Error Estimation and Mesh Adaptation for Tracer Transport Modelling </em>,
+            Computer-Aided Design, 2022.
+            <a href="javascript:visibilite('div-cad1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-cad1" style="display:none;">
+            This paper applies metric-based mesh adaptation methods to advection-dominated tracer transport modelling problems in two and three dimensions, using the finite element package Firedrake. In particular, the mesh adaptation methods considered are built upon goal-oriented estimates for the error incurred in evaluating a diagnostic quantity of interest (QoI). In the motivating example of modelling to support desalination plant outfall design, such a QoI could be the salinity at the plant inlet, which could be negatively impacted by the transport of brine from the plant’s outfall. Four approaches are considered, one of which yields isotropic meshes. The focus on advection-dominated problems means that flows are often anisotropic; thus, three anisotropic approaches are also considered. Meshes resulting from each of the four approaches yield solutions to the tracer transport problem which give better approximations to QoI values than uniform meshing, for a given mesh size. The methodology is validated using an existing 2D tracer transport test case with a known analytical solution. Goal-oriented meshes for an idealised time-dependent desalination outfall scenario are also presented.
+          </div>
+
+          <p>[2] J. Wallwork, <b>N. Barral</b>, S. Kramer, D. Ham, M. Piggott,
+            <em>Goal-oriented error estimation and mesh adaptation for shallow water modelling</em>,
+            SN Applied Science, 2020.
+            <a title="https://link.springer.com/content/pdf/10.1007/s42452-020-2745-9.pdf" href="https://link.springer.com/content/pdf/10.1007/s42452-020-2745-9.pdf">[PDF]</a>
+            <a href="javascript:visibilite('div-snas1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-snas1" style="display:none;">
+            This study presents a novel goal-oriented error estimate for the nonlinear shallow water equations solved using a mixed discontinuous/continuous Galerkin approach. This error estimator takes account of the discontinuities in the discrete solution and is used to drive two metric-based mesh adaptation algorithms: one which yields isotropic meshes and another which yields anisotropic meshes. An implementation of these goal-oriented mesh adaptation algorithms is described, including a method for approximating the adjoint error term which arises in the error estimate. Results are presented for simulations of two model tidal farm configurations computed using the Thetis coastal ocean model (Kärnä et al. in Geosci Model Dev 11(11):4359–4382, 2018). Convergence analysis indicates that meshes resulting from the goal-oriented adaptation strategies permit accurate QoI estimation using fewer computational resources than uniform refinement.
+          </div>
+
+          <p>[3] M. Galbraith, P. Caplan, H. Carson, M. Park, A. Balan, W. Anderson, T. Michal, J. Krakos, D. Kamenetskiy, A. Loseille, F. Alauzet, L. Frazza, <b>N. Barral</b>
+            <em>Verification of Unstructured Grid Adaptation Components</em>,
+            AIAA Journal, 2020.
+            <a href="javascript:visibilite('div-aiaaj1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-aiaaj1" style="display:none;">
+            Unstructured grid techniques have the potential of minimizing discretization errors for production analysis workflows where the control of errors is critical to obtaining reliable simulation results. Recent progress has matured a number of independent implementations of flow solvers, error estimation methods, and anisotropic grid adaptation mechanics. Here, the interoperability of several separately developed unstructured grid adaptation tools is verified using analytic functions and the Code Comparison Principle. Three analytic functions with different smoothness properties are adapted to show the impact of smoothness on implementation differences. A scalar advection-diffusion problem with an analytic solution that models a boundary layer is adapted to test individual grid adaptation components. While optimal asymptotic error convergence rates are achieved with many grid adaptation tool combinations for the scalar problems, the scalar problems also illustrate known differences in grid adaptation component implementations and a previously unknown interaction between components. Laminar flow over a delta wing is verified with multiple, independent grid adaptation procedures to show consistent convergence to fine-grid forces and pitching moment. These verification efforts form the nucleus of a benchmark to verify the integration of unstructured grad adaptation components and support production analysis workflows.
+          </div>
+
+          <p>[4] <b>N. Barral</b> and F. Alauzet,
              <em>Three-dimensional CFD simulations with large displacement of the geometries using a connectivity-change moving mesh approach</em>, Engineering with Computers, 2018.
              [<a title="https://link.springer.com/content/pdf/10.1007%2Fs00366-018-0607-5.pdf" href="https://link.springer.com/content/pdf/10.1007%2Fs00366-018-0607-5.pdf">PDF</a>]
              <a href="javascript:visibilite('div-ewc2');"> Abstract&gt; </a>
@@ -83,7 +111,7 @@
               This paper deals with three-dimensional (3D) numerical simulations involving 3D moving geometries with large displacements on unstructured meshes. Such simulations are of great value to industry, but remain very time-consuming. A robust moving mesh algorithm coupling an elasticity-like mesh deformation solution and mesh optimizations was proposed in previous works, which removes the need for global remeshing when performing large displacements. The optimizations, and in particular generalized edge/face swapping, preserve the initial quality of the mesh throughout the simulation. We propose to integrate an Arbitrary Lagrangian Eulerian compressible flow solver into this process to demonstrate its capabilities in a full CFD computation context. This solver relies on a local enforcement of the discrete geometric conservation law to preserve the order of accuracy of the time integration. The displacement of the geometries is either imposed, or driven by fluid–structure interaction (FSI). In the latter case, the six degrees of freedom approach for rigid bodies is considered. Finally, several 3D imposed-motion and FSI examples are given to validate the proposed approach, both in academic and industrial configurations.              
           </div>
   
-          <p>[2] <b>N. Barral</b>, G. Olivier and F. Alauzet,  
+          <p>[5] <b>N. Barral</b>, G. Olivier and F. Alauzet,  
               <em>Time-accurate anisotropic mesh adaptation for three-dimensional time-dependent problems with body-fitted moving geometries</em>, Journal of Computational Physics, 2017.
               [<a title="https://hal.inria.fr/hal-01426156/document" href="https://hal.inria.fr/hal-01426156/document">PDF</a>]
               <a href="javascript:visibilite('div-jcp');"> Abstract&gt; </a>
@@ -92,7 +120,7 @@
               Anisotropic metric-based mesh adaptation has proved its efficiency to reduce the CPU time of steady and unsteady simulations while improving their accuracy. However, its extension to time-dependent problems with body-fitted moving geometries is far from straightforward. This paper establishes a well-founded framework for multiscale mesh adaptation of unsteady problems with moving boundaries. This framework is based on a novel space–time analysis of the interpolation error, within the continuous mesh theory. An optimal metric field, called ALE metric field, is derived, which takes into account the movement of the mesh during the adaptation. Based on this analysis, the global fixed-point adaptation algorithm for time-dependent simulations is extended to moving boundary problems, within the range of body-fitted moving meshes and ALE simulations. Finally, three dimensional adaptive simulations with moving boundaries are presented to validate the proposed approach.              
           </div>
                     
-          <p>[3] P.L. George, H. Borouchaki and <b>N. Barral</b>,
+          <p>[6] P.L. George, H. Borouchaki and <b>N. Barral</b>,
              <em>Geometric validity (positive jacobian) of high-order Lagrange finite elements, theory and practical guidance</em>
              Engineering with computers, 2016.
              [<a title="./papers/George2016_Article_GeometricValidityPositiveJacob.pdf" href="./papers/George2016_Article_GeometricValidityPositiveJacob.pdf">PDF</a>]
@@ -105,7 +133,18 @@
 
           <h3>Preprints</h3>
 
-          <p>[1] <b>N. Barral</b>, M.G. Knepley, M. Lange, M.D. Piggott and G.J. Gorman,
+          <p>[1] J. Wallwork, L. Mackie, S. Kramer, <b>N. Barral</b>, A. Angeloudis and M. Piggott,
+            <em>Goal-Oriented Metric-Based Mesh Adaptive Tidal Farm Modelling</em>,
+            IX Conference on Computational Methods in Marine Engineering
+(MARINE 2021), 2021.
+            [<a title="https://doi.org/10.31223/X5D61K" href="https://doi.org/10.31223/X5D61K">PDF</a>]
+            <a href="javascript:visibilite('div-marine1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-marine1" style="display:none;">
+            The modelling of a tidal array farm is an inherently multi-scale endeavour. It requires the simultaneous resolution of tidal processes across tens or hundreds of kilometres of coastal ocean (including estuaries, or even entire seas), the hydrodynamics in the neighbourhood of the farm (hundreds of metres), the wakes of individual turbines (metres, or tens of metres) and device hydrodynamics (sub-metre). As such, the construction of an accurate, computationally efficient numerical model requires careful consideration of the underlying discretisation. In this paper, we apply time-dependent mesh adaptation techniques based on the Riemannian metric framework to an idealised tidal array and assess the quality of the resulting approximations. Whilst classical hierarchical mesh adaptation methods modify mesh element/cell size in order to improve resolution locally, the metric-based approach also allows for control of element shape and orientation, which can be especially advantageous for advection-dominated problems. Metrics are normalised in such a way that the resulting discretisation is multi-scale in both space and time as per Alauzet and Olivier (2010). Typically, metrics are constructed from recovered derivatives of solution fields, such as fluid vorticity. Alternatively, metrics may be derived from goal-oriented error estimates, enabling accurate estimation of a diagnostic quantity of interest (QoI). In the context of tidal farm modelling, one clear QoI is the power output. Building upon the idealised steady-state test case considered in Wallwork et al. (2020), which represents turbines using a drag parametrisation in a depth-averaged shallow water model, we demonstrate here that goal-oriented mesh adaptation can be used to obtain an accurate approximation of tidal farm power output using relatively few overall degrees of freedom.
+          </div>
+
+          <p>[2] <b>N. Barral</b>, M.G. Knepley, M. Lange, M.D. Piggott and G.J. Gorman,
              <em>Anisotropic mesh adaptation in Firedrake with PETSc DMPlex</em>, 
              25th International Meshing Roundtable, Washington DC, USA, September 2016.
              [<a title="https://imr.sandia.gov/papers/imr25/2026_imr25RN_Barral.pdf" href="https://imr.sandia.gov/papers/imr25/2026_imr25RN_Barral.pdf">PDF</a>]
@@ -115,7 +154,7 @@
               Despite decades of research in this area, mesh adaptation capabilities are still rarely found in numerical simulation software. Wepostulate that the primary reason for this is lack of usability. Integrating mesh adaptation into existing software is difficult as non-trivial operators, such as error metrics and interpolation operators, are required, and integrating available adaptive remeshers is notstraightforward. Our approach presented here is to first integrate Pragmatic, an anisotropic mesh adaptation library, into DMPlex, aPETSc object that manages unstructured meshes and their interactions with PETSc’s solvers and I/O routines. As PETSc is alreadywidely used, this will make anisotropic mesh adaptation available to a much larger community.  As a demonstration of this wedescribe the integration of anisotropic mesh adaptation into Firedrake, an automated Finite Element based system for the portablesolution of partial differential equations which already uses PETSc solvers and I/O via DMPlex. We present a proof of concept ofthis integration with a three-dimensional advection test case.              
           </div> 
 
-          <p>[2] P.L. George, H. Borouchaki and <b>N. Barral</b>,
+          <p>[3] P.L. George, H. Borouchaki and <b>N. Barral</b>,
              <em>Construction and geometric validity (positive Jacobian) of serendipity Lagrange finite elements, theory and practical guidance</em>, 
              to be published.
              [<a title="./papers/serendipity.pdf" href="./papers/serendipity.pdf">preprint</a>]
@@ -287,7 +326,7 @@
           <p>[1] T. McManus, J. Percival, B. Yeager, <b>N. Barral</b> G. Gorman and M. Piggott
              <em>Moving mesh methods in Fluidity and Firedrake</em>, 
              Archer report eCSE06-1, 2017.
-             [<a title="https://spiral.imperial.ac.uk/bitstream/10044/1/57583/2/IC15-ecse-tech-report.pdf" href="https://spiral.imperial.ac.uk/bitstream/10044/1/57583/2/IC15-ecse-tech-report.pdf"></a>]
+             <a title="https://spiral.imperial.ac.uk/bitstream/10044/1/57583/2/IC15-ecse-tech-report.pdf" href="https://spiral.imperial.ac.uk/bitstream/10044/1/57583/2/IC15-ecse-tech-report.pdf">[PDF]</a>
           </p>
 
           <p>[2] P.L George, H. Borouchaki and <b>N. Barral</b>, <em>Construction et validation des éléments Serendip associés à un carreau de degré arbitraire</em>, INRIA RR-8572, 2014.  
@@ -329,7 +368,7 @@
 
           <h3>Theses</h3>
 
-          <p>[1] N. Barral,
+          <p>[1] <b>N. Barral</b>,
              <em>Time-accurate anisotropic mesh adaptation for three-dimensional moving mesh problems</em>,
              PhD Thesis, Université Pierre et Marie Curie, 2015.
              [<a title="https://hal.inria.fr/tel-01284113v2/document" href="https://hal.inria.fr/tel-01284113v2/document">pdf</a>] 
@@ -339,7 +378,7 @@
               Time dependent simulations are still a challenge for industry, notably due to prob- lems raised by moving boundaries, both in terms of CPU cost and accuracy. This thesis presents contributions to several aspects of simulations with moving meshes. A moving-mesh algorithm based on a large deformation time step and connectivity changes (swaps) is studied. An elastic- ity method and an Inverse Distance Weighted interpolation method are compared on many 3D examples, demonstrating the efficiency of the algorithm in handling large geometry displace- ment without remeshing. This algorithm is coupled with an Arbitrary-Lagrangian-Eulerian (ALE) solver, whose schemes and implementation in 3D are described in details. A linear in- terpolation scheme is used to handle swaps. Validation test cases showed that the use of swaps does not impact notably the accuracy of the solution, while several other complex 3D examples demonstrate the capabilities of the approach both with imposed motion and Fluid-Structure Interaction problems. Metric-based mesh adaptation has proved its efficiency in improving the accuracy of steady simulation at a reasonable cost. We consider the extension of these methods to unsteady problems, updating the previous fixed-point algorithm thanks to a new space-time error analysis based on the continuous mesh model. An efficient p-thread parallelization enables running 3D unsteady adaptative simulations with a new level of accuracy. This algorithm is extended to moving mesh problems, notably by correcting the optimal unsteady metric. Fi- nally several 3D examples of adaptative moving mesh simulations are exhibited, that prove our concept by improving notably the accuracy of the solution for a reasonable time cost.
           </div>
 
-          <p>[2] N. Barral,
+          <p>[2] <b>N. Barral</b>,
              <em>Adaptation de maillages en régime instationnaire (Mesh adaptation for unsteady flows)</em>, 
              Masters Thesis, Ecole Centrale Paris, 2012. 
              [<a href="papers/memoireMaster.pdf">pdf</a>]
