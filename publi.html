@@ -134,7 +134,23 @@
 
           <h3>Preprints</h3>
 
-          <p>[1] J. Wallwork, L. Mackie, S. Kramer, <b>N. Barral</b>, A. Angeloudis and M. Piggott,
+          <p>[1] J. Wallwork, A. Angeloudis, <b>N. Barral</b>, L. Mackie, S. Kramer  and M. Piggott,
+            <em>Tidal Turbine Array Modelling using Goal-Oriented Mesh Adaptation</em>,
+            submitted to Journal of Ocean Engineering and Marine Energy.
+            [<a title="https://doi.org/10.31223/X5H06B" href="https://doi.org/10.31223/X5H06B">PDF</a>]
+            <a href="javascript:visibilite('div-joeme1');"> Abstract&gt; </a>
+          </p>
+          <div id="div-joeme1" style="display:none;">
+            Purpose: To examine the accuracy and sensitivity of tidal array performance assessment by numerical techniques applying goal-oriented mesh adaptation.<br>
+
+            Methods: The goal-oriented framework is designed to give rise to adaptive meshes upon which a given diagnostic quantity of interest (QoI) can be accurately captured, whilst maintaining a low overall computational cost. We seek to improve the accuracy of the discontinuous Galerkin method applied to a depth-averaged shallow water model of a tidal energy farm, where turbines are represented using a drag parametrisation and the energy output is specified as the QoI. Two goal-oriented adaptation strategies are considered, which give rise to meshes with isotropic and anisotropic elements.<br>
+
+            Results: We present both fixed mesh and goal-oriented adaptive mesh simulations for an established test case involving an idealised tidal turbine array positioned in a channel. With both the fixed meshes and the goal-oriented methodologies, we reproduce results from the literature which demonstrate how a staggered array configuration extracts more energy than an aligned array. We also make detailed qualitative and quantitative comparisons between the fixed mesh and adaptive outputs.<br>
+
+            Conclusion: The proposed goal-oriented mesh adaptation strategies are validated for the purposes of tidal energy resource assessment. Using 10% as many degrees of freedom as a high resolution fixed mesh benchmark, they are shown to enable energy output differences smaller than 10%. Applied to a tidal array with aligned rows of turbines, the anisotropic adaptation scheme is shown to yield differences smaller than 1%.
+          </div>          
+
+          <p>[2] J. Wallwork, L. Mackie, S. Kramer, <b>N. Barral</b>, A. Angeloudis and M. Piggott,
             <em>Goal-Oriented Metric-Based Mesh Adaptive Tidal Farm Modelling</em>,
             IX Conference on Computational Methods in Marine Engineering
 (MARINE 2021), 2021.
@@ -145,7 +161,7 @@
             The modelling of a tidal array farm is an inherently multi-scale endeavour. It requires the simultaneous resolution of tidal processes across tens or hundreds of kilometres of coastal ocean (including estuaries, or even entire seas), the hydrodynamics in the neighbourhood of the farm (hundreds of metres), the wakes of individual turbines (metres, or tens of metres) and device hydrodynamics (sub-metre). As such, the construction of an accurate, computationally efficient numerical model requires careful consideration of the underlying discretisation. In this paper, we apply time-dependent mesh adaptation techniques based on the Riemannian metric framework to an idealised tidal array and assess the quality of the resulting approximations. Whilst classical hierarchical mesh adaptation methods modify mesh element/cell size in order to improve resolution locally, the metric-based approach also allows for control of element shape and orientation, which can be especially advantageous for advection-dominated problems. Metrics are normalised in such a way that the resulting discretisation is multi-scale in both space and time as per Alauzet and Olivier (2010). Typically, metrics are constructed from recovered derivatives of solution fields, such as fluid vorticity. Alternatively, metrics may be derived from goal-oriented error estimates, enabling accurate estimation of a diagnostic quantity of interest (QoI). In the context of tidal farm modelling, one clear QoI is the power output. Building upon the idealised steady-state test case considered in Wallwork et al. (2020), which represents turbines using a drag parametrisation in a depth-averaged shallow water model, we demonstrate here that goal-oriented mesh adaptation can be used to obtain an accurate approximation of tidal farm power output using relatively few overall degrees of freedom.
           </div>
 
-          <p>[2] <b>N. Barral</b>, M.G. Knepley, M. Lange, M.D. Piggott and G.J. Gorman,
+          <p>[3] <b>N. Barral</b>, M.G. Knepley, M. Lange, M.D. Piggott and G.J. Gorman,
              <em>Anisotropic mesh adaptation in Firedrake with PETSc DMPlex</em>, 
              25th International Meshing Roundtable, Washington DC, USA, September 2016.
              [<a title="https://imr.sandia.gov/papers/imr25/2026_imr25RN_Barral.pdf" href="https://imr.sandia.gov/papers/imr25/2026_imr25RN_Barral.pdf">PDF</a>]
@@ -155,7 +171,7 @@
               Despite decades of research in this area, mesh adaptation capabilities are still rarely found in numerical simulation software. Wepostulate that the primary reason for this is lack of usability. Integrating mesh adaptation into existing software is difficult as non-trivial operators, such as error metrics and interpolation operators, are required, and integrating available adaptive remeshers is notstraightforward. Our approach presented here is to first integrate Pragmatic, an anisotropic mesh adaptation library, into DMPlex, aPETSc object that manages unstructured meshes and their interactions with PETSc’s solvers and I/O routines. As PETSc is alreadywidely used, this will make anisotropic mesh adaptation available to a much larger community.  As a demonstration of this wedescribe the integration of anisotropic mesh adaptation into Firedrake, an automated Finite Element based system for the portablesolution of partial differential equations which already uses PETSc solvers and I/O via DMPlex. We present a proof of concept ofthis integration with a three-dimensional advection test case.
           </div> 
 
-          <p>[3] P.L. George, H. Borouchaki and <b>N. Barral</b>,
+          <p>[4] P.L. George, H. Borouchaki and <b>N. Barral</b>,
              <em>Construction and geometric validity (positive Jacobian) of serendipity Lagrange finite elements, theory and practical guidance</em>, 
              to be published.
              [<a title="./papers/serendipity.pdf" href="./papers/serendipity.pdf">preprint</a>]
